@@ -73,7 +73,7 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
 
       // Header
       // Application Name used in Branding Area
-      this.appName = ko.observable("App Name");
+      this.appName = ko.observable("IDP Plus");
       // User Info used in Global Navigation area
       this.userLogin = ko.observable("john.hancock@oracle.com");
 
