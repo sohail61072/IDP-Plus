@@ -35,9 +35,11 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
       let navData = [
         { path: '', redirect: 'dashboard' },
         { path: 'dashboard', detail: { label: 'Dashboard', iconClass: 'oj-ux-ico-bar-chart' } },
-        { path: 'incidents', detail: { label: 'Incidents', iconClass: 'oj-ux-ico-fire' } },
-        { path: 'customers', detail: { label: 'Customers', iconClass: 'oj-ux-ico-contact-group' } },
-        { path: 'about', detail: { label: 'About', iconClass: 'oj-ux-ico-information-s' } }
+        { path: 'manageSources', detail: { label: 'Manage Sources', iconClass: 'oj-ux-ico-information-s' } },
+        { path: 'lookUp', detail: { label: 'Look up', iconClass: 'oj-ux-ico-fire' } },
+        { path: 'transformationRuleSets', detail: { label: 'Transformation Rule Sets', iconClass: 'oj-ux-ico-contact-group' } },
+        { path: 'dataTransformationRules', detail: { label: 'Data Transformation Rules', iconClass: 'oj-ux-ico-information-s' } },
+        { path: 'supplierMaster', detail: { label: 'Supplier Master', iconClass: 'oj-ux-ico-information-s' } }
       ];
 
       // Router setup

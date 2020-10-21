@@ -5,16 +5,16 @@
  */
 
 /**
- * dashboard module
+ * manageSources module
  */
 define(['ojs/ojcore', 'knockout'
 ], function (oj, ko) {
     /**
      * The view model for the main content view template
      */
-    function dashboardContentViewModel() {
+    function manageSourcesContentViewModel() {
         var self = this;
     }
     
-    return dashboardContentViewModel;
+    return manageSourcesContentViewModel;
 });
