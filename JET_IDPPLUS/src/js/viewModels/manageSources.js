@@ -7,15 +7,14 @@
 /**
  * manageSources module
  */
-define(['ojs/ojcore', 'knockout', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojbutton', 'ojs/ojanimation', 'knockout', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojbutton',
-'ojs/ojpopup','ojs/ojresponsiveutils', 'ojs/ojresponsiveknockoututils',
-'ojs/ojmessaging', 'ojs/ojinputtext', 'ojs/ojlabel', 'ojs/ojformlayout'
-], function (oj, ko, AnimationUtils,Bootstrap,ResponsiveUtils, ResponsiveKnockoutUtils, Message) {
+define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojarraydataprovider', 'ojs/ojknockout', 'ojs/ojtable', 'ojs/ojpagingcontrol', 'ojs/ojbutton',
+'ojs/ojpopup', 'ojs/ojanimation', 'ojs/ojformlayout', 'ojs/ojinputtext'
+], function (ko, Bootstrap, PagingDataProviderView, ArrayDataProvider, AnimationUtils) {
     /**
      * The view model for the main content view template
      */
     function manageSourcesContentViewModel() {
-        var self = this;
+        
 
         // this.isSmall = ResponsiveKnockoutUtils.createMediaQueryObservable(
         //     ResponsiveUtils.getFrameworkQuery(ResponsiveUtils.FRAMEWORK_QUERY_KEY.SM_ONLY));
@@ -58,6 +57,25 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojbootstrap', 'ojs/ojknockout', 'ojs/ojbu
             var popup = document.getElementById('popup1');
             popup.close();
           };
+
+          var deptArray = [{ SourceName: "Evosys Email", SourceType: 'Email'},
+          { SourceName: "Mastek Email", SourceType: 'Email'},
+          { SourceName: "Mastek Sharepoint", SourceType: 'SFTP'},
+          { SourceName: "Evosys Drive", SourceType: 'SFPT'},
+          { SourceName: "Evosys Email", SourceType: 'Email'},
+          { SourceName: "Mastek Email", SourceType: 'Email'},
+          { SourceName: "Mastek Sharepoint", SourceType: 'SFTP'},
+          { SourceName: "Evosys Drive", SourceType: 'SFPT'},
+          { SourceName: "Evosys Email", SourceType: 'Email'},
+          { SourceName: "Mastek Email", SourceType: 'Email'},
+          { SourceName: "Mastek Sharepoint", SourceType: 'SFTP'},
+          { SourceName: "Evosys Drive", SourceType: 'SFPT'},
+          { SourceName: "Evosys Email", SourceType: 'Email'},
+          { SourceName: "Mastek Email", SourceType: 'Email'},
+          { SourceName: "Mastek Sharepoint", SourceType: 'SFTP'},
+          { SourceName: "Evosys Drive", SourceType: 'SFPT'}];
+  
+      this.pagingDataProvider = new PagingDataProviderView(new ArrayDataProvider(deptArray, { idAttribute: 'DepartmentId' }));
 
           
         }

@@ -23,28 +23,64 @@
 #icon_button2 > *{
   color: white;
 } */
- .demo-popup {
-      width: 80vw;  
-      height: 80vh; 
-      display: none;
-    } 
-    .demo-popup-body {
-      width: 75vw;  
-      height: 75vh; 
-      display: flex; 
-      flex-direction: column;
-      align-items: stretch;
-    } 
-    .demo-popup-header {
-      align-self: flex-start;
-      margin-bottom: 10px;
-    } 
-    .demo-popup-content {
-      align-self: stretch;
-      overflow: auto;
-      flex-basis: 60vh;
-    } 
-    .demo-popup-footer {
-      align-self: flex-end;
-      margin-top: 10px; 
-    }
+
+.oj-table{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.oj-table-column-header-text{
+  color: white;
+}
+
+.oj-table-body-row:nth-of-type(odd){
+  background-color: #f0f0f0;
+}
+
+.oj-table-header .oj-component-icon{
+  color: white;
+}
+
+.oj-table-header .oj-component-icon:hover{
+  color: grey;
+}
+
+.oj-table-sort-icon-container{
+  color: white;
+}
+
+.oj-table-sort-icon-container .oj-component-icon:hover{
+  color: grey;
+}
+
+
+thead{
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.demo-popup {
+  width: 80vw;  
+  height: 80vh; 
+  display: none;
+} 
+.demo-popup-body {
+  width: 75vw;  
+  height: 75vh; 
+  display: flex; 
+  flex-direction: column;
+  align-items: stretch;
+} 
+.demo-popup-header {
+  align-self: flex-start;
+  margin-bottom: 10px;
+} 
+.demo-popup-content {
+  align-self: stretch;
+  overflow: auto;
+  flex-basis: 60vh;
+} 
+.demo-popup-footer {
+  align-self: flex-end;
+  margin-top: 10px; 
+}

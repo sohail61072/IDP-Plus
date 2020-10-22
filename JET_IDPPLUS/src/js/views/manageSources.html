@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
 
@@ -5,9 +6,6 @@
  <body class="demo-disable-bg-image">
       <div id="sampleDemo" style="" class="demo-padding demo-container">
         <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
-                  
-          
-          
           <div id="popupWrapper">
             <oj-popup id="popup1" class="demo-popup"
               tail="none" position.my.horizontal="center" position.my.vertical="bottom"
@@ -37,12 +35,19 @@
             </oj-popup>
             <oj-button id="btnGo" on-oj-action="[[openListener]]">+ Sources</oj-button>
           </div>
-    
-
-          
-          
-          
         </div>
       </div>
+
+      <div id="pagingControlDemo">
+        <oj-table id="table" aria-label="Departments Table"
+               data="[[pagingDataProvider]]"
+               selection-mode='{"row": "multiple", "column": "multiple"}'
+               columns='[{"headerText": "Source Name", "field": "SourceName"},
+                         {"headerText": "Source Type", "field": "SourceType"}]' 
+               style="width: 100%;">
+            <oj-paging-control id="paging" data="[[pagingDataProvider]]" page-size="10" slot="bottom">
+            </oj-paging-control>
+        </oj-table>
+    </div> 
     <noscript><img src="https://www.oracle.com/akam/11/pixel_58114c48?a=dD1hOTBjMmRmNjRlYjk2YjdmZTAwMWI5Y2UxZWMxZTkzYTllNjQ4ZTMwJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
   </html>
