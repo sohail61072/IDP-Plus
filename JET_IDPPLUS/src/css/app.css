@@ -59,28 +59,34 @@ thead{
   color: white;
 }
 
-.demo-popup {
-  width: 80vw;  
-  height: 80vh; 
-  display: none;
-} 
-.demo-popup-body {
-  width: 75vw;  
-  height: 75vh; 
-  display: flex; 
-  flex-direction: column;
-  align-items: stretch;
-} 
-.demo-popup-header {
-  align-self: flex-start;
-  margin-bottom: 10px;
-} 
-.demo-popup-content {
-  align-self: stretch;
-  overflow: auto;
-  flex-basis: 60vh;
-} 
-.demo-popup-footer {
-  align-self: flex-end;
-  margin-top: 10px; 
-}
+ .demo-popup {
+      width: auto;  
+      height: auto; 
+      display: none;
+      border-radius: 10px;
+      
+      
+    } 
+    .demo-popup-body {
+      width: auto;  
+      height: auto; 
+      display: flex; 
+      flex-direction: column;
+      align-items: stretch;
+    } 
+    .demo-popup-header {
+      align-self: flex-start;
+      /* margin-bottom: 0px; */
+      text-align: center;
+      border-bottom: solid 1px
+    } 
+    .demo-popup-content {
+      margin: 20px;
+      overflow: auto;
+      /* flex-basis: 60vh; */
+    } 
+    .demo-popup-footer {
+      align-self: flex-end;
+      margin-top: 10px; 
+    }
+

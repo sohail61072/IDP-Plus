@@ -4,11 +4,7 @@
  * and open the template in the editor.
  */
 
-/**
- * manageSources module
- */
-define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojarraydataprovider', 'ojs/ojknockout', 'ojs/ojtable', 'ojs/ojpagingcontrol', 'ojs/ojbutton',
-'ojs/ojpopup', 'ojs/ojanimation', 'ojs/ojformlayout', 'ojs/ojinputtext'
+define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojarraydataprovider', 'ojs/ojknockout', 'ojs/ojtable', 'ojs/ojpagingcontrol', 'ojs/ojbutton', 'ojs/ojpopup', 'ojs/ojanimation', 'ojs/ojformlayout', 'ojs/ojinputtext', 'ojs/ojselectcombobox'
 ], function (ko, Bootstrap, PagingDataProviderView, ArrayDataProvider, AnimationUtils) {
     /**
      * The view model for the main content view template
@@ -34,8 +30,7 @@ define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojar
         //       return 2;
         //   }, this);
         
-    
-                  
+   
         this.startAnimationListener = function (event) {
             var ui = event.detail;
             if (event.target.id !== 'popup1') { return; }
@@ -43,7 +38,7 @@ define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojar
             if (ui.action === 'open') {
               event.preventDefault();
               var options = { direction: 'top' };
-              AnimationUtils.slideIn(ui.element, options).then(ui.endCallback);
+            //   AnimationUtils.slideIn(ui.element, options).then(ui.endCallback);
             } else if (ui.action === 'close') {
               event.preventDefault();
               ui.endCallback();
