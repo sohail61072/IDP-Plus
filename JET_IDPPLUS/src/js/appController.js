@@ -15,6 +15,8 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
 
       this.KnockoutTemplateUtils = KnockoutTemplateUtils;
 
+      this.display = ko.observable('icons');
+      
       // Handle announcements sent when pages change, for Accessibility.
       this.manner = ko.observable('polite');
       this.message = ko.observable();
