@@ -1,7 +1,48 @@
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<html>
+    <head>
 
-<h1>manageSources</h1>
+    </head>
+ <body class="demo-disable-bg-image">
+      <div id="sampleDemo" style="" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+                  
+          
+          
+          <div id="popupWrapper">
+            <oj-popup id="popup1" class="demo-popup"
+              tail="none" position.my.horizontal="center" position.my.vertical="bottom"
+              position.at.horizontal="center" position.at.vertical="bottom"
+              position.of="window" position.offset.y="-10"
+              modality="modal" on-oj-animate-start="[[startAnimationListener]]">
+                <div class="demo-popup-body">
+                  <div class="demo-popup-header"><h5>ADD NEW SOURCE</h5></div>
+                  <div class="demo-popup-content">
+                        <div id="form-container"><span class="demo-screen-range"></span> 
+
+                                <oj-form-layout direction="row" >
+                                  <oj-input-text value="" label-hint="Source Name"></oj-input-text>
+
+                                  <oj-input-text value="" label-hint="Email Address"></oj-input-text>
+                
+                                </oj-form-layout>
+                
+                          </div>
+                  </div>
+                  <div class="demo-popup-footer">
+                    <oj-button id="btnCancel"  on-oj-action="[[cancelListener]]">
+                      Cancel
+                    </oj-button>
+                  </div>
+                </div>    
+            </oj-popup>
+            <oj-button id="btnGo" on-oj-action="[[openListener]]">+ Sources</oj-button>
+          </div>
+    
+
+          
+          
+          
+        </div>
+      </div>
+    <noscript><img src="https://www.oracle.com/akam/11/pixel_58114c48?a=dD1hOTBjMmRmNjRlYjk2YjdmZTAwMWI5Y2UxZWMxZTkzYTllNjQ4ZTMwJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body>
+  </html>
