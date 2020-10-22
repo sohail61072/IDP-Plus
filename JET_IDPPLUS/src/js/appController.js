@@ -17,6 +17,11 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
 
       this.display = ko.observable('icons');
       
+      this.menuToggleListener = function(event, data, bindingContext)
+      {
+        data.display(data.display._latestValue=='icons' ? 'all' : 'icons');
+      };
+
       // Handle announcements sent when pages change, for Accessibility.
       this.manner = ko.observable('polite');
       this.message = ko.observable();
