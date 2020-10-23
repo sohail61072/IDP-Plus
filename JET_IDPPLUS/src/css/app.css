@@ -15,14 +15,20 @@
   overflow: hidden;
 }
 
-/* .navbar{
+.navbar{
   background-color: #031689;
-  
 }
 
-#icon_button2 > *{
+#pageContent > header > div.navbar.oj-flex-bar.oj-sm-align-items-center > div.oj-flex-bar-middle.oj-sm-align-items-baseline > h1{
   color: white;
-} */
+}
+#drawerToggleButton > button > div > span.oj-web-applayout-offcanvas-icon.oj-button-icon.oj-start{
+  color: white;
+}
+
+#icon_button2 > button > div > *{
+  color: white;
+}
 
 .oj-table{
   border: 1px solid black;

@@ -69,10 +69,10 @@
            ** on the JET website for more information on how to use this pattern.
         -->
         <header role="banner" class="oj-web-applayout-header">
-          <div class="navbar oj-web-applayout-max-width oj-flex-bar oj-sm-align-items-center">
+          <div class="navbar oj-flex-bar oj-sm-align-items-center">
           
             <oj-button id="drawerToggleButton" class="oj-button-lg" chroming="borderless" display="icons" on-oj-action="[[menuToggleListener]]">
-              <span slot="startIcon" class="oj-web-applayout-offcanvas-icon"></span>
+              <span slot="startIcon" class="oj-web-applayout-offcanvas-icon" ></span>
               <span>Application Navigation</span>
             </oj-button>
             <div class="oj-flex-bar-middle oj-sm-align-items-baseline">
@@ -94,13 +94,12 @@
               </oj-toolbar>
             </div>
           </div>
-          <div class="oj-flex-item oj-sm-padding-2x-horizontal">
-          </div>
           <div role="navigation" class="oj-web-applayout-max-width oj-web-applayout-navbar">
             
           </div>
         </header>
-        <div class="oj-flex oj-sm-flex-items-1">
+      <div id="pageContent">
+        <div class="oj-flex oj-sm-flex-items-1 oj-sm-flex-wrap-nowrap">
           <div class="oj-flex-item oj-sm-flex-0">
             <oj-navigation-list id="navTabBar" class="oj-sm oj-md-condense"
               data="[[navDataProvider]]"
@@ -114,6 +113,7 @@
             </oj-module>
           </div>
         </div>
+     </div>
         <footer class="oj-web-applayout-footer" role="contentinfo">
           <div class="oj-web-applayout-footer-item oj-web-applayout-max-width">
             <ul>
