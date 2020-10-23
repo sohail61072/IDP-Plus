@@ -86,6 +86,7 @@ thead{
       /* margin-bottom: 0px; */
       text-align: center;
       border-bottom: .5px solid gray;
+      max-width: 100%;
     } 
     .demo-popup-content {
       margin: 20px;
@@ -96,3 +97,6 @@ thead{
       align-self: flex-end;
       margin-top: 10px; 
     }
+    .oj-form-layout .oj-form.oj-enabled .oj-text-field-label-inside.oj-text-field .oj-text-field-container,
+    .oj-text-field-label-inside.oj-text-field:not(.oj-read-only) .oj-text-field-container {
+      min-height: 2.75em; }

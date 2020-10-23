@@ -6,7 +6,7 @@
 </head>
 
 <body class="demo-disable-bg-image">
-    <div id="sampleDemo" style="" class="demo-padding demo-container">
+    <div id="sampleDemo" class="demo-padding demo-container">
         <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
           <div id="popupWrapper">
             <oj-popup id="popup1" class="demo-popup"
@@ -14,8 +14,8 @@
               position.at.horizontal="center" position.at.vertical="center"
               position.of="window" 
               >
+              <div class="demo-popup-header"><h5>ADD NEW SOURCE</h5></div>
                 <div class="demo-popup-body">
-                  <div class="demo-popup-header"><h5>ADD NEW SOURCE</h5></div>
                   <div class="demo-popup-content">
 
                         <div class="oj-flex oj-sm-flex-items-1">
@@ -60,7 +60,7 @@
                             <oj-button id="btnSubmit" on-oj-action="[[cancelListener]]">
                                 Submit
                             </oj-button>
-                            <oj-button id="btnCancel" on-oj-action="[[cancelListener]]" style="">
+                            <oj-button id="btnCancel" on-oj-action="[[cancelListener]]" style="float: right;">
                                 Cancel
                             </oj-button>
                         </div>
@@ -94,7 +94,7 @@
             </div>
     </div>
 
-    <div id="pagingControlDemo">
+    <div id="pagingControlDemo" style="margin-top:10px">
         <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
             selection-mode='{"row": "multiple", "column": "multiple"}' columns='[{"headerText": "Source Name", "field": "SourceName"},
                          {"headerText": "Source Type", "field": "SourceType"}]' style="width: 100%;">
