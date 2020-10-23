@@ -6,6 +6,26 @@
         This is where any of your application specific styles should be included
 */
 
+.bluebutton{
+  background-color: #0099a8;
+  border-radius: 4px;
+  color: white;
+}
+
+.oj-fwk-icon.oj-fwk-icon-magnifier.oj-button-icon.oj-start{
+  color: white;
+}
+
+.bluebutton > button > div{
+  color: white;
+}
+
+.formlayout{
+  max-width: 30%;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
 .sendOffScreen {
   position: absolute;
   left: -10000px;
