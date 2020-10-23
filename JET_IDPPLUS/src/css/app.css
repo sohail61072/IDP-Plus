@@ -70,6 +70,7 @@ thead{
       height: auto; 
       display: none;
       border-radius: 10px;
+      background:#fbf9f8
       
       
     } 
@@ -84,7 +85,7 @@ thead{
       align-self: flex-start;
       /* margin-bottom: 0px; */
       text-align: center;
-      border-bottom: solid 1px
+      border-bottom: .5px solid gray;
     } 
     .demo-popup-content {
       margin: 20px;
@@ -95,4 +96,3 @@ thead{
       align-self: flex-end;
       margin-top: 10px; 
     }
-
