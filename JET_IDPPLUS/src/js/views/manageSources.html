@@ -2,21 +2,20 @@
 <html>
 
 <head>
-
 </head>
 
-<body class="demo-disable-bg-image">
-    <div id="sampleDemo" class="demo-padding demo-container">
-        <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+<body>
+    <div id="popup_container" class="oj-sm-padding-2x oj-md-padding-2x">
+        <div id="componentContent" style="width: 1px; min-width: 100%;">
             <div id="popupWrapper">
-                <oj-popup id="popup1" class="demo-popup" tail="none" position.my.horizontal="center"
+                <oj-popup id="popup1" class="popup1" tail="none" position.my.horizontal="center"
                     position.my.vertical="center" position.at.horizontal="center" position.at.vertical="center"
                     position.of="window">
-                    <div class="demo-popup-header">
+                    <div class="header">
                         <h5>ADD NEW SOURCE</h5>
                     </div>
-                    <div class="demo-popup-body">
-                        <div class="demo-popup-content">
+                    <div class="body">
+                        <div class="content">
 
                             <div class="oj-flex oj-sm-flex-items-1">
                                 <div class="oj-flex oj-sm-flex-items-initial" style="margin-right:10px;">
@@ -48,7 +47,7 @@
                         </div>
 
                     </div>
-                    <div class="demo-popup-footer">
+                    <div class="footer">
                         <oj-button id="btnCancel" on-oj-action="[[cancelListener]]">
                             CLOSE
                         </oj-button>
@@ -136,7 +135,7 @@
         </div>
     </div>
 
-    <div id="pagingControlDemo" style="margin-top:10px">
+    <div id="pagingControl" style="margin-top:10px">
         <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
             selection-mode='{"row": "multiple", "column": "multiple"}' columns='[{"headerText": "Source Name", "field": "SourceName"},
                          {"headerText": "Source Type", "field": "SourceType"}]' style="width: 100%;">
