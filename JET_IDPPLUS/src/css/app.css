@@ -22,7 +22,7 @@
 
 .formlayout{
   max-width: 30%;
-  margin-right:10px;
+  margin-right:8px;
 }
 
 .sendOffScreen {
@@ -119,3 +119,5 @@ thead{
     .oj-form-layout .oj-form.oj-enabled .oj-text-field-label-inside.oj-text-field .oj-text-field-container,
     .oj-text-field-label-inside.oj-text-field:not(.oj-read-only) .oj-text-field-container {
       min-height: 2.75em; }
+
+
