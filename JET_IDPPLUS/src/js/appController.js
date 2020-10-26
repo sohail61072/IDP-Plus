@@ -44,7 +44,7 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
         { path: 'dashboard', detail: { label: 'Dashboard', iconClass: 'oj-ux-ico-bar-chart' } },
         { path: 'manageSources', detail: { label: 'Manage Sources', iconClass: 'oj-ux-ico-information-s' } },
         { path: 'lookUp', detail: { label: 'Look up', iconClass: 'oj-ux-ico-fire' } },
-        { path: 'TransFormationRule', detail: { label: 'Transformation Rule', iconClass: 'oj-ux-ico-information-s' } },
+        { path: 'transFormationRule', detail: { label: 'Transformation Rule', iconClass: 'oj-ux-ico-information-s' } },
         { path: 'transformationRuleSets', detail: { label: 'Transformation Rule Sets', iconClass: 'oj-ux-ico-contact-group' } },
         { path: 'dataTransformationRules', detail: { label: 'Data Transformation Rules', iconClass: 'oj-ux-ico-information-s' } },
         { path: 'supplierMaster', detail: { label: 'Supplier Master', iconClass: 'oj-ux-ico-information-s' } }
