@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojarraydataprovider', 'ojs/ojknockout', 'ojs/ojtable', 'ojs/ojpagingcontrol', 'ojs/ojbutton', 'ojs/ojpopup', 'ojs/ojanimation', 'ojs/ojformlayout', 'ojs/ojinputtext', 'ojs/ojselectcombobox'
+define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojarraydataprovider', 'ojs/ojknockout', 'ojs/ojtable', 'ojs/ojpagingcontrol', 'ojs/ojbutton', 'ojs/ojpopup', 'ojs/ojanimation', 'ojs/ojformlayout', 'ojs/ojinputtext', 'ojs/ojselectcombobox', 'ojs/ojmenu', 'ojs/ojoption'
 ], function (ko, Bootstrap, PagingDataProviderView, ArrayDataProvider, AnimationUtils) {
     /**
      * The view model for the main content view template
@@ -29,7 +29,11 @@ define(['knockout', 'ojs/ojbootstrap', 'ojs/ojpagingdataproviderview', 'ojs/ojar
         //     else
         //       return 2;
         //   }, this);
-        
+
+        this.selectedMenuItem = ko.observable('(None selected yet)');
+        this.menuItemAction = function (event) {
+          this.selectedMenuItem(event.target.value);
+        }.bind(this);
    
         this.startAnimationListener = function (event) {
             var ui = event.detail;

@@ -68,7 +68,7 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
       // Close offcanvas on medium and larger screens
       this.mdScreen.subscribe(() => {OffcanvasUtils.close(this.drawerParams);});
       this.drawerParams = {
-        displayMode: 'push',
+        displayMode: 'overlay',
         selector: '#navDrawer',
         content: '#pageContent'
       };
@@ -80,7 +80,7 @@ define(['knockout', 'ojs/ojmodule-element-utils', 'ojs/ojknockouttemplateutils',
 
       // Header
       // Application Name used in Branding Area
-      this.appName = ko.observable("IDP Plus");
+      this.appName = ko.observable("IDP+");
       // User Info used in Global Navigation area
       this.userLogin = ko.observable("john.hancock@oracle.com");
 
