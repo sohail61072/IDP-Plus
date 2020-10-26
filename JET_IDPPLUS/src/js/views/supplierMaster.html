@@ -1,7 +1,60 @@
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!DOCTYPE html>
+<html>
 
-<h1>supplierMaster</h1>
+<head>
+</head>
+
+<body>
+    <div class="oj-flex oj-sm-flex-items-1">
+        <div class="formlayout oj-flex-item oj-sm-flex-0">
+            <oj-button id="icon_button1" display='icons' chroming="solid">Icon Button
+                <span slot='startIcon' class="demo-garbage-icon-24 demo-icon-font-24"></span>
+            </oj-button>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Supplier No"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Supplier Name"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="TaxID"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-combobox-one id="combobox6" value="Supplier Type">
+                <oj-option value="C">Corporation</oj-option>
+            </oj-combobox-one>
+        </div>
+        <div class="oj-flex-item oj-sm-flex-auto">
+            <oj-button display='icons' class="bluebutton" chroming="borderless">Icon Button
+                <span slot='startIcon' class="icontest oj-fwk-icon oj-fwk-icon-magnifier"></span>
+            </oj-button>
+        </div>
+        <div class="oj-flex-item-end oj-sm-flex-auto">
+    
+    
+            <div id='menubutton-container'>
+                <oj-button id="btnSubmit" class="bluebutton">
+                    Export
+                </oj-button>    
+            </div>
+        </div>
+    </div>
+    
+    <div id="pagingControl" style="margin-top:10px">
+        <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
+            selection-mode='{"row": "multiple", "column": "multiple"}' 
+            columns='[{"headerText": "Supplier No", "field": "SupplierNo"},
+                         {"headerText": "SupplierName", "field": "SupplierName"},
+                         {"headerText": "Tax ID", "field": "TaxID"},
+                         {"headerText": "SupplierType", "field": "SupplierType"}]' 
+            style="width: 100%;">
+            <oj-paging-control id="paging" data="[[pagingDataProvider]]" page-size="10" slot="bottom">
+            </oj-paging-control>
+        </oj-table>
+    </div>
+    
+
+</body>
+
+</html>
