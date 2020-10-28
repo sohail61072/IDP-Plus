@@ -6,48 +6,106 @@
 
 <body>
 
-        <div id='menubutton-container' class="oj-md-padding-2x">
-            <oj-menu-button id="menuButton">
-                View
-                <!-- To handle menu item selection, use an action listener as shown, not a click listener. -->
-                <oj-menu  id="myMenu" slot="menu" on-oj-action="[[menuItemAction]]">
-                    <oj-option id="reorder" value="reorder">Reorder Columns
-                    </oj-option>
+    <div class="oj-flex">
+        <div class="oj-flex-item">
+            <div class="oj-panel oj-sm-margin-2x oj-sm-padding-0 demo-mypanel oj-bg-neutral-30 oj-panel-shadow-sm">
+                <div class="oj-flex oj-sm-flex-wrap-nowrap" style="border-bottom: 1px groove;">
+                    <div class="oj-flex-item oj-sm-padding-2x"><span class="demo-info-icon-24 demo-icon-font-24" role="img"></span></div>
+                    <div class="oj-flex-item oj-sm-padding-2x oj-typography-subheading-sm">PENDING MY REVIEW</div>
+                </div>
+                <div class="oj-flex oj-sm-flex-wrap-nowrap">
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-text-color-success oj-flex oj-sm-justify-content-center">944</span><div class="oj-flex oj-sm-justify-content-center">0-7</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x" style="border-left: 1px groove; border-right: 1px groove;"><span class="oj-typography-heading-sm oj-text-color-warning oj-flex oj-sm-justify-content-center">124</span><div class="oj-flex oj-sm-justify-content-center">8-14</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-text-color-danger oj-flex oj-sm-justify-content-center">159</span><div class="oj-flex oj-sm-justify-content-center">15+</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="oj-flex-item">
+            <div class="oj-panel oj-sm-margin-2x oj-sm-padding-0 demo-mypanel oj-bg-neutral-30 oj-panel-shadow-sm">
+                <div class="oj-flex oj-sm-flex-wrap-nowrap" style="border-bottom: 1px groove;">
+                    <div class="oj-flex-item oj-sm-padding-2x"><span class="demo-info-icon-24 demo-icon-font-24" role="img"></span></div>
+                    <div class="oj-flex-item oj-sm-padding-2x oj-typography-subheading-sm">TOTAL HOLDS</div>
+                </div>
+                <div class="oj-flex oj-sm-flex-wrap-nowrap">
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-flex oj-sm-justify-content-center">05</span><div class="oj-flex oj-sm-justify-content-center">Validation</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x" style="border-left: 1px groove; border-right: 1px groove;"><span class="oj-typography-heading-sm oj-flex oj-sm-justify-content-center">01</span><div class="oj-flex oj-sm-justify-content-center">Purchasing</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-flex oj-sm-justify-content-center">0</span><div class="oj-flex oj-sm-justify-content-center">Other</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="oj-flex-item">
+            <div class="oj-panel oj-sm-margin-2x oj-sm-padding-0 demo-mypanel oj-bg-neutral-30 oj-panel-shadow-sm">
+                <div class="oj-flex oj-sm-flex-wrap-nowrap" style="border-bottom: 1px groove;">
+                    <div class="oj-flex-item oj-sm-padding-2x"><span class="demo-info-icon-24 demo-icon-font-24" role="img"></span></div>
+                    <div class="oj-flex-item oj-sm-padding-2x oj-typography-subheading-sm">APPROVED</div>
+                </div>
+                <div class="oj-flex oj-sm-flex-wrap-nowrap">
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-flex oj-sm-justify-content-center">0</span><div class="oj-flex oj-sm-justify-content-center">Validation</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x" style="border-left: 1px groove; border-right: 1px groove;"><span class="oj-typography-heading-sm oj-flex oj-sm-justify-content-center">399</span><div class="oj-flex oj-sm-justify-content-center">Purchasing</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-flex oj-sm-justify-content-center">159</span><div class="oj-flex oj-sm-justify-content-center">Other</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="oj-flex-item">
+            <div class="oj-panel oj-sm-margin-2x oj-sm-padding-0 demo-mypanel oj-bg-neutral-30 oj-panel-shadow-sm">
+                <div class="oj-flex oj-sm-flex-wrap-nowrap" style="border-bottom: 1px groove;">
+                    <div class="oj-flex-item oj-sm-padding-2x"><span class="demo-info-icon-24 demo-icon-font-24" role="img"></span></div>
+                    <div class="oj-flex-item oj-sm-padding-2x oj-typography-subheading-sm">UNASSIGNED INVOICE</div>
+                </div>
+                <div class="oj-flex oj-sm-flex-wrap-nowrap">
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-text-color-success oj-flex oj-sm-justify-content-center">944</span><div class="oj-flex oj-sm-justify-content-center">0-7</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x" style="border-left: 1px groove; border-right: 1px groove;"><span class="oj-typography-heading-sm oj-text-color-warning oj-flex oj-sm-justify-content-center">124</span><div class="oj-flex oj-sm-justify-content-center">8-14</div></div>
+                    <div class="oj-flex-item oj-sm-padding-4x"><span class="oj-typography-heading-sm oj-text-color-danger oj-flex oj-sm-justify-content-center">159</span><div class="oj-flex oj-sm-justify-content-center">15+</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    <oj-option>---------------------------------</oj-option>
-                    <oj-option id="zoom">
-                        <span>Columns</span>
-                        <oj-menu id="zoom_menu">
-                            <oj-option id="showall" value="Show All">
-                                Show All
-                            </oj-option>
-                            <oj-option id="reorder" value="Reorder Columns">
-                                Reorder Columns
-                            </oj-option>
-                            <oj-option id="name" value="Name">
-                                Name
-                            </oj-option>
-                            <oj-option id="processid" value="Process ID">
-                                process ID
-                            </oj-option>
-                            <oj-option id="status" value="Status">
-                                Status
-                            </oj-option>
-                            <oj-option id="scheduletime" value="Schedule Time">
-                                Schedule Time
-                            </oj-option>
-                            <oj-option id="scheduledate" value="Schedule Date">
-                                Schedule Date
-                            </oj-option>
-                        </oj-menu>
-                    </oj-option>
-                </oj-menu>
-            </oj-menu-button>
-            <oj-button id="btnSubmit" class="bluebutton">
-                Export
-            </oj-button>
+    <div class="oj-flex oj-sm-flex-items-1">
+        <div class="oj-flex-item oj-sm-flex-auto">
+        </div>
+        <div class="oj-flex-item-end oj-sm-flex-auto">
+            <div id='menubutton-container' class="oj-md-padding-2x">
+                <oj-menu-button id="menuButton">
+                    View
+                    <!-- To handle menu item selection, use an action listener as shown, not a click listener. -->
+                    <oj-menu  id="myMenu" slot="menu" on-oj-action="[[menuItemAction]]">
+                        <oj-option id="reorder" value="reorder">Reorder Columns
+                        </oj-option>
 
-
+                        <oj-option>---------------------------------</oj-option>
+                        <oj-option id="zoom">
+                            <span>Columns</span>
+                            <oj-menu id="zoom_menu">
+                                <oj-option id="showall" value="Show All">
+                                    Show All
+                                </oj-option>
+                                <oj-option id="reorder" value="Reorder Columns">
+                                    Reorder Columns
+                                </oj-option>
+                                <oj-option id="name" value="Name">
+                                    Name
+                                </oj-option>
+                                <oj-option id="processid" value="Process ID">
+                                    process ID
+                                </oj-option>
+                                <oj-option id="status" value="Status">
+                                    Status
+                                </oj-option>
+                                <oj-option id="scheduletime" value="Schedule Time">
+                                    Schedule Time
+                                </oj-option>
+                                <oj-option id="scheduledate" value="Schedule Date">
+                                    Schedule Date
+                                </oj-option>
+                            </oj-menu>
+                        </oj-option>
+                    </oj-menu>
+                </oj-menu-button>
+                <oj-button id="btnSubmit" class="bluebutton">
+                    Export
+                </oj-button>
+            </div>
         </div>
     <div class="oj-flex oj-sm-flex-items-1">
         <div class="formlayout oj-flex-item oj-sm-flex-0">
@@ -88,11 +146,8 @@
                 <span slot='startIcon' class="icontest oj-fwk-icon oj-fwk-icon-magnifier"></span>
             </oj-button>
         </div>
-        <div class="oj-flex-item-end oj-sm-flex-auto">
-
-
-        </div>
     </div>
+</div>
 
     <div id="pagingControl" style="margin-top:10px">
         <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
