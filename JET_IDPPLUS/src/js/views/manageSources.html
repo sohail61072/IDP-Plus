@@ -136,8 +136,8 @@
     </div>
 
     <div id="pagingControl" style="margin-top:10px">
-        <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
-            selection-mode='{"row": "multiple", "column": "multiple"}' columns='[{"headerText": "Source Name", "field": "SourceName"},
+        <oj-table id="table" aria-label="Departments Table" display='grid' data="[[pagingDataProvider]]"
+            selection-mode='{"row": "multiple"}' columns='[{"headerText": "Source Name", "field": "SourceName"},
                          {"headerText": "Source Type", "field": "SourceType"}]' style="width: 100%;">
             <oj-paging-control id="paging" data="[[pagingDataProvider]]" page-size="10" slot="bottom">
             </oj-paging-control>

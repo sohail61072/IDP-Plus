@@ -162,8 +162,8 @@
     </div>
 
     <div id="pagingControl" style="margin-top:10px">
-        <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
-            selection-mode='{"row": "multiple", "column": "multiple"}' columns='[
+        <oj-table id="table" aria-label="Departments Table" display='grid' data="[[pagingDataProvider]]"
+            selection-mode='{"row": "multiple"}' columns='[
                         {"headerText": "Transformation Rule", "field": "transformationRule"}, 
                         {"headerText": "Target System", "field": "targetSystem"},
                         {"headerText": "Field Name", "field": "fieldName"},

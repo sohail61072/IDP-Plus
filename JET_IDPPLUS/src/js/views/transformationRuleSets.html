@@ -133,8 +133,8 @@
 </div>
 
 <div id="pagingControl" style="margin-top:10px">
-    <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
-        selection-mode='{"row": "multiple", "column": "multiple"}' 
+    <oj-table id="table" aria-label="Departments Table" display='grid' data="[[pagingDataProvider]]"
+        selection-mode='{"row": "multiple"}' 
         columns='[{"headerText": "Rule Set", "field": "RuleSet"},
                      {"headerText": "Level", "field": "Level"}]' 
         style="width: 100%;">
