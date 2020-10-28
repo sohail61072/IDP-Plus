@@ -1,7 +1,119 @@
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!DOCTYPE html>
+<html>
 
-<h1>dashboard</h1>
+<head>
+</head>
+
+<body>
+
+        <div id='menubutton-container' class="oj-md-padding-2x">
+            <oj-menu-button id="menuButton">
+                View
+                <!-- To handle menu item selection, use an action listener as shown, not a click listener. -->
+                <oj-menu  id="myMenu" slot="menu" on-oj-action="[[menuItemAction]]">
+                    <oj-option id="reorder" value="reorder">Reorder Columns
+                    </oj-option>
+
+                    <oj-option>---------------------------------</oj-option>
+                    <oj-option id="zoom">
+                        <span>Columns</span>
+                        <oj-menu id="zoom_menu">
+                            <oj-option id="showall" value="Show All">
+                                Show All
+                            </oj-option>
+                            <oj-option id="reorder" value="Reorder Columns">
+                                Reorder Columns
+                            </oj-option>
+                            <oj-option id="name" value="Name">
+                                Name
+                            </oj-option>
+                            <oj-option id="processid" value="Process ID">
+                                process ID
+                            </oj-option>
+                            <oj-option id="status" value="Status">
+                                Status
+                            </oj-option>
+                            <oj-option id="scheduletime" value="Schedule Time">
+                                Schedule Time
+                            </oj-option>
+                            <oj-option id="scheduledate" value="Schedule Date">
+                                Schedule Date
+                            </oj-option>
+                        </oj-menu>
+                    </oj-option>
+                </oj-menu>
+            </oj-menu-button>
+            <oj-button id="btnSubmit" class="bluebutton">
+                Export
+            </oj-button>
+
+
+        </div>
+    <div class="oj-flex oj-sm-flex-items-1">
+        <div class="formlayout oj-flex-item oj-sm-flex-0">
+            <oj-button id="icon_button1" display='icons' chroming="solid">Icon Button
+                <span slot='startIcon' class="demo-garbage-icon-24 demo-icon-font-24"></span>
+            </oj-button>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Invoice Number"></oj--text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Amount"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Supplier"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Supplier Site"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-combobox-one id="combobox6" value="Validation Status">
+                <oj-option value="IE">Complete</oj-option>
+                <oj-option value="FF">Incomplete</oj-option>
+                <oj-option value="FF">Error</oj-option>
+            </oj-combobox-one>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Invoice Date"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Business Unit"></oj-input-text>
+        </div>
+        <div class="formlayout oj-flex-item oj-sm-flex-auto">
+            <oj-input-text value="" label-hint="Creation Date"></oj-input-text>
+        </div>
+        <div class="oj-flex-item oj-sm-flex-auto">
+            <oj-button display='icons' class="bluebutton" chroming="borderless">Icon Button
+                <span slot='startIcon' class="icontest oj-fwk-icon oj-fwk-icon-magnifier"></span>
+            </oj-button>
+        </div>
+        <div class="oj-flex-item-end oj-sm-flex-auto">
+
+
+        </div>
+    </div>
+
+    <div id="pagingControl" style="margin-top:10px">
+        <oj-table id="table" aria-label="Departments Table" data="[[pagingDataProvider]]"
+            selection-mode='{"row": "multiple", "column": "multiple"}' columns='[
+            {"headerText": "Invoice Number", "field": "invoiceNo"},
+            {"headerText": "Amount", "field": "amount"},
+            {"headerText": "Supplier", "field": "supplier"},
+            {"headerText": "Supplier Site", "field": "supplierSite"},
+            {"headerText": "Validation Status", "field": "validationStatus"},
+            {"headerText": "Invoice Date", "field": "invoiceDate"},
+            {"headerText": "Business Unit", "field": "businessUnit"},
+            {"headerText": "Creation Date", "field": "creationDate"}
+            ]' style="width: 100%;">
+            <oj-paging-control id="paging" data="[[pagingDataProvider]]" page-size="10" slot="bottom">
+            </oj-paging-control>
+        </oj-table>
+    </div>
+
+    <noscript><img
+            src="https://www.oracle.com/akam/11/pixel_58114c48?a=dD1hOTBjMmRmNjRlYjk2YjdmZTAwMWI5Y2UxZWMxZTkzYTllNjQ4ZTMwJmpzPW9mZg=="
+            style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
+</body>
+
+</html>
