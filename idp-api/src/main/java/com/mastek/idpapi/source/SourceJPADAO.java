@@ -1,6 +1,5 @@
 package com.mastek.idpapi.source;
 
-import com.mastek.idpapi.customer.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
