@@ -56,7 +56,23 @@
 
 .oj-table-column-header-text{
   color: white;
+
 }
+.oj-table-column-header-cell{
+background: #2b2b2b;
+}
+.oj-table-column-header-cell:hover{
+  background: #2b2b2b;
+  }
+.oj-table-column-header-cell{
+  background: #2b2b2b;
+  outline-color: #2b2b2b;
+  }
+
+.oj-table-column-header-selector-cell{
+  background: #2b2b2b;
+}
+
 
 .oj-table-body-row:nth-of-type(odd){
   background-color: #f0f0f0;
