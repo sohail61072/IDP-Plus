@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/89b5ed4a-69d4-4760-8f94-6bac07504ed2/resourceGroups/Mastek_IDP_RG/providers/Microsoft.Web/sites/MastekIDPPlus",
+    "appService.deploySubpath": "."
+}

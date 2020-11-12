@@ -1,1 +1,5 @@
 /JET_IDPPLUS/nbproject/private/
+target/
+.idea/
+*.iml
+.settings/

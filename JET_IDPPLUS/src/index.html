@@ -51,7 +51,10 @@
     <script type="text/html" id="navTemplate">
       <li><a href="#">
         <span class="oj-navigationlist-item-icon"><span :class="[[$data.detail.iconClass]]"></span></span>
+        <div id="drawer"
+        class="oj-offcanvas-start oj-panel oj-bg-neutral-30 demo-offcanvas-drawer">
         <oj-bind-text value="[[$data.detail.label]]"></oj-bind-text>
+      </div>
       </a></li>
     </script>
 
