@@ -14,4 +14,8 @@ public class SourceService implements SourceAPI {
     public Set<Source> getSources(){
         return sourceDao.findAll();
     }
+
+    public Source addNewSource(Source newSource){
+        return sourceDao.save(newSource);
+    }
 }

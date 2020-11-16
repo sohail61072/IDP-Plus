@@ -1,0 +1,22 @@
+package com.mastek.idpapi.lookup;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.Set;
+
+@Component
+public class LookupService implements LookupAPI{
+
+    @Autowired
+    LookupJPADAO lookupDao;
+
+    public Set<Lookup> getLookups(){
+        return lookupDao.findAll();
+    }
+
+    public Lookup addNewLookup(Lookup newLookup){
+        return lookupDao.save(newLookup);
+    }
+
+}

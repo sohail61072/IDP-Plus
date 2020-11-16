@@ -1,18 +1,19 @@
-package com.mastek.idpapi.source;
+package com.mastek.idpapi.lookup;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.Set;
 
-@Path("/sources/")
-public interface SourceAPI {
+@Path("/lookups/")
+public interface LookupAPI {
 
     @GET
     @Path("/")
     @Produces({MediaType.APPLICATION_JSON})
-    public Set<Source> getSources();
+    public Set<Lookup> getLookups();
 
     @POST
     @Path("/")
     @Produces({MediaType.APPLICATION_JSON})
-    public Source addNewSource(@BeanParam Source newSource);
+    public Lookup addNewLookup(@BeanParam Lookup newLookup);
 }
