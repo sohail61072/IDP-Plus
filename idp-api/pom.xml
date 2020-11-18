@@ -12,10 +12,10 @@
   </parent>
 
   <groupId>org.example</groupId>
-  <artifactId>farmers-2-home</artifactId>
+  <artifactId>idp-api</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>farmers-2-home</name>
+  <name>idp-api</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -109,6 +109,34 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>com.microsoft.azure</groupId>
+          <artifactId>azure-webapp-maven-plugin</artifactId>
+          <version>1.6.0</version>
+          <configuration>
+            <schemaVersion>V2</schemaVersion>
+            <subscriptionId>89b5ed4a-69d4-4760-8f94-6bac07504ed2</subscriptionId>
+            <resourceGroup>Mastek_IDP_RG</resourceGroup>
+            <appName>MastekIDPPlusAPI</appName>
+            <pricingTier>F1</pricingTier>
+            <region>westindia</region>
+            <runtime>
+              <os>Windows</os>
+              <webContainer>Java SE</webContainer>
+              <javaVersion>1.8</javaVersion>
+            </runtime>
+            <deployment>
+              <resources>
+                <resource>
+                  <directory>${project.basedir}/target</directory>
+                  <includes>
+                    <include>*.jar</include>
+                  </includes>
+                </resource>
+              </resources>
+            </deployment>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>

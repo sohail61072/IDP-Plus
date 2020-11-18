@@ -1,6 +1,8 @@
 package com.mastek.idpapi.apis;
 
+import com.mastek.idpapi.datatransformation.DTRService;
 import com.mastek.idpapi.lookup.LookupService;
+import com.mastek.idpapi.ruleset.RulesetService;
 import com.mastek.idpapi.source.SourceService;
 import com.mastek.idpapi.supplierMaster.SupplierMaster;
 import com.mastek.idpapi.supplierMaster.SupplierMasterService;
@@ -20,6 +22,8 @@ public class APIConfig extends ResourceConfig {
 		register(LookupService.class);
 		register(TransformationRuleService.class);
 		register(SupplierMasterService.class);
+		register(RulesetService.class);
+		register(DTRService.class);
 	}
 
 }
