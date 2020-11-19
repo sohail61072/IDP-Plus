@@ -2,6 +2,7 @@ package com.mastek.idpapi.source;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Set;
 
@@ -15,7 +16,7 @@ public class SourceService implements SourceAPI {
         return sourceDao.findAll();
     }
 
-    public Source addNewSource(Source newSource){
+    public Source addNewSource(@RequestBody Source newSource){
         return sourceDao.save(newSource);
     }
 }
