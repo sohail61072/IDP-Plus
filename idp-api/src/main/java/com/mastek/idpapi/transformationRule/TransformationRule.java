@@ -9,17 +9,11 @@ public class TransformationRule {
 
         private int transformationRuleId;
 
-        @FormParam("rule")
         private String transformationRule;
-        @FormParam("system")
         private String targetSystem;
-        @FormParam("field")
         private String fieldName;
-        @FormParam("level")
         private String level;
-        @FormParam("ruleQuery")
         private String ruleQuery;
-        @FormParam("IDPField")
         private String IdpField;
 
     @Id

@@ -2,6 +2,7 @@ package com.mastek.idpapi.supplierMaster;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Set;
 
@@ -15,7 +16,7 @@ public class SupplierMasterService implements SupplierMasterAPI {
         return supplierDao.findAll();
     }
 
-    public SupplierMaster addNewSupplier(SupplierMaster newSupplierMaster){
+    public SupplierMaster addNewSupplier(@RequestBody SupplierMaster newSupplierMaster){
         return supplierDao.save(newSupplierMaster);
     }
 

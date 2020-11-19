@@ -1,5 +1,7 @@
 package com.mastek.idpapi.transformationRule;
 
+import org.springframework.web.bind.annotation.RequestBody;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.Set;
@@ -15,6 +17,7 @@ public interface TransformationRuleAPI {
         @POST
         @Path("/")
         @Produces({MediaType.APPLICATION_JSON})
-        public TransformationRule addNewTransformationRule(@BeanParam TransformationRule newTransRule);
+        @Consumes(MediaType.APPLICATION_JSON)
+        public TransformationRule addNewTransformationRule(@RequestBody TransformationRule newTransRule);
 
 }

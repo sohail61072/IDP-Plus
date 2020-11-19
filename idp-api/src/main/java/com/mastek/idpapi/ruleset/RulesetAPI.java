@@ -1,6 +1,7 @@
 package com.mastek.idpapi.ruleset;
 
 import com.mastek.idpapi.lookup.Lookup;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -17,5 +18,6 @@ public interface RulesetAPI {
     @POST
     @Path("/")
     @Produces({MediaType.APPLICATION_JSON})
-    public Ruleset addNewRuleset(@BeanParam Ruleset newRuleset);
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Ruleset addNewRuleset(@RequestBody Ruleset newRuleset);
 }

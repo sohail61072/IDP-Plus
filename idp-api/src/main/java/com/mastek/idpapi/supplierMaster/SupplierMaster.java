@@ -8,11 +8,8 @@ import javax.ws.rs.FormParam;
 public class SupplierMaster {
     private int supplierId;
 
-    @FormParam("name")
     private String supplierName;
-    @FormParam("taxID")
     private String taxID;
-    @FormParam("type")
     private String supplierType;
 
     @Id

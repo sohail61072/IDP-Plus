@@ -9,11 +9,8 @@ public class Lookup {
 
     private int lookupId;
 
-    @FormParam("name")
     private String lookupName;
-    @FormParam("value")
     private String inputValue;
-    @FormParam("transValue")
     private String transformedValue;
 
     @Id

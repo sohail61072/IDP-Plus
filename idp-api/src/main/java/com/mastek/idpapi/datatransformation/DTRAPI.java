@@ -1,6 +1,8 @@
 package com.mastek.idpapi.datatransformation;
 
 
+import org.springframework.web.bind.annotation.RequestBody;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.Set;
@@ -16,5 +18,6 @@ public interface DTRAPI {
     @POST
     @Path("/")
     @Produces({MediaType.APPLICATION_JSON})
-    public DTR addNewDataRule(@BeanParam DTR newDataRule);
+    @Consumes(MediaType.APPLICATION_JSON)
+    public DTR addNewDataRule(@RequestBody DTR newDataRule);
 }

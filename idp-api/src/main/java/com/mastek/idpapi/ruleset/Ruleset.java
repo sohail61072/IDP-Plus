@@ -9,9 +9,7 @@ public class Ruleset {
 
     private int rulesetId;
 
-    @FormParam("ruleset")
     private String ruleSet;
-    @FormParam("level")
     private String level;
 
     @Id

@@ -2,6 +2,7 @@ package com.mastek.idpapi.transformationRule;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Set;
 
@@ -15,7 +16,7 @@ public class TransformationRuleService implements TransformationRuleAPI {
         return transDao.findAll();
     }
 
-    public TransformationRule addNewTransformationRule(TransformationRule newTransRule) {
+    public TransformationRule addNewTransformationRule(@RequestBody TransformationRule newTransRule) {
         return transDao.save(newTransRule);
     }
 }

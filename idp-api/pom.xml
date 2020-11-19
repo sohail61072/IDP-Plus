@@ -123,7 +123,7 @@
             <region>westindia</region>
             <runtime>
               <os>Windows</os>
-              <webContainer>Java SE</webContainer>
+              <webContainer>tomcat 9.0</webContainer>
               <javaVersion>1.8</javaVersion>
             </runtime>
             <deployment>

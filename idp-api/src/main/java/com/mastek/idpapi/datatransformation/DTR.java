@@ -9,9 +9,7 @@ public class DTR {
 
     private int ruleId;
 
-    @FormParam("name")
     private String fieldName;
-    @FormParam("query")
     private String ruleQuery;
 
     @Id

@@ -2,6 +2,7 @@ package com.mastek.idpapi.ruleset;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Set;
 
@@ -15,7 +16,7 @@ public class RulesetService implements RulesetAPI {
         return rulesetDAO.findAll();
     }
 
-    public Ruleset addNewRuleset(Ruleset newRuleset){
+    public Ruleset addNewRuleset(@RequestBody Ruleset newRuleset){
         return rulesetDAO.save(newRuleset);
     }
 }

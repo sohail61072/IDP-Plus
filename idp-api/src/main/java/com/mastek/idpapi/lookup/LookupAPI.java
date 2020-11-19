@@ -1,5 +1,7 @@
 package com.mastek.idpapi.lookup;
 
+import org.springframework.web.bind.annotation.RequestBody;
+
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.Set;
@@ -15,5 +17,6 @@ public interface LookupAPI {
     @POST
     @Path("/")
     @Produces({MediaType.APPLICATION_JSON})
-    public Lookup addNewLookup(@BeanParam Lookup newLookup);
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Lookup addNewLookup(@RequestBody Lookup newLookup);
 }
