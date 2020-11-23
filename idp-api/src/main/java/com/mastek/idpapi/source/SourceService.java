@@ -19,4 +19,8 @@ public class SourceService implements SourceAPI {
     public Source addNewSource(@RequestBody Source newSource){
         return sourceDao.save(newSource);
     }
+
+    public Source updateSource(@RequestBody Source newSource){
+        return sourceDao.save(newSource);
+    }
 }

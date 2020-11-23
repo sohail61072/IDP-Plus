@@ -1,5 +1,6 @@
 package com.mastek.idpapi.source;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -17,5 +18,14 @@ public interface SourceAPI {
     @Path("/")
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes(MediaType.APPLICATION_JSON)
-    public Source addNewSource(@RequestBody Source newSource);
+    public Source addNewSource(@RequestBody  Source newSource);
+
+    @PUT
+    @Path("/update")
+    @Produces({MediaType.APPLICATION_JSON})
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Source updateSource(@RequestBody  Source newSource);
 }
+
+
+
