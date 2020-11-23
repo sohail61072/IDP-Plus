@@ -25,6 +25,11 @@ public interface SourceAPI {
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes(MediaType.APPLICATION_JSON)
     public Source updateSource(@RequestBody  Source newSource);
+
+    @DELETE
+    @Path("/{id}")
+    @Produces({MediaType.APPLICATION_JSON})
+    public void deleteSource(@PathParam("id") int sourceId);
 }
 
 
